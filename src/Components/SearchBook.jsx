@@ -44,9 +44,9 @@ const SearchBook = () => {
                     <Filterbook />
                 </div>
                 <div className='booklist'>
-                    {books.map((book) => (
+                    {books!==undefined || [] ?books.map((book) => (
                         <BookItem key={book.id} book={book} />
-                    ))}
+                    )):""}
                 </div>
                 <Pagination />
             </div>

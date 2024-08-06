@@ -15,6 +15,7 @@ const initialState = {
     searchTerm: '',
     sortDir: 'ASC',
     currentPage: 1,
+    totalPages: 1,
     languageFilter: '',
 };
 
@@ -24,6 +25,7 @@ const bookReducer = (state = initialState, action) => {
             return {
                 ...state,
                 books: action.payload.data,
+                totalPages: action.payload.pagination.totalPages,
             };
         case ADD_BOOK_SUCCESS:
         case UPDATE_BOOK_SUCCESS:
