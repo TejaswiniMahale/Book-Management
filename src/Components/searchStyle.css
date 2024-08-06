@@ -1,0 +1,56 @@
+.searchBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.searchBar>button{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid black;
+}
+.searchBar>input{
+    width: 50%;
+    height: 40px;
+    border-radius: 20px;
+    border: black;
+    font-size: 16px;
+}
+.filterSort{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 0;
+}
+.sort{
+    height: 30px;
+    border-radius: 15px;
+    width: 100px;
+}
+
+.booklist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 25px;
+}
+.singleItem{
+    color: #fff;
+    width: 50%;
+    text-align: left;
+}
+.bookImg>img{
+    width: 70%;
+}
+.bookImg{
+    width: 50%;
+}
+.bookItem{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}

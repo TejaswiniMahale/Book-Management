@@ -1,0 +1,70 @@
+.addbook-flex{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    font-family: Arial, sans-serif;
+    
+}
+
+.logo-icon {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #e50914; /* Red color similar to Netflix */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+}
+
+.logo-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: #e5e4e4; /* Dark gray for text */
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.logo-text:first-of-type {
+    font-size: 22px;
+    color: #666; /* Lighter gray for secondary text */
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+.addbookFields{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+    width: 300px;
+}
+.addbookFields>input{
+    padding-left: 10px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 16px;
+    border: 1px solid black;
+}
+.addbookFields>select{
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 15px;
+    font-size: 16px;
+    border: 1px solid black;
+}
+.addbookFields>button{
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: red;
+}
