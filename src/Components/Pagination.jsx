@@ -15,7 +15,7 @@ const Pagination = () => {
     };
 
     const pages = [];
-    for (let i = 1; i <= totalPages?totalPages:1; i++) {
+    for (let i = 1; i <= totalPages; i++) {
         pages.push(
             <button
                 key={i}
