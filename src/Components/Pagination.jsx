@@ -5,7 +5,6 @@ import { setCurrentPage, fetchBooks } from '../Redux/actions';
 const Pagination = () => {
     const dispatch = useDispatch();
     const currentPage = useSelector((state) => state.books.currentPage);
-    const totalPages = useSelector((state) => state.books.totalPages);
     const searchTerm = useSelector((state) => state.books.searchTerm);
     const sortDir = useSelector((state) => state.books.sortDir);
 
@@ -15,6 +14,7 @@ const Pagination = () => {
     };
 
     const pages = [];
+    let totalPages = 5
     for (let i = 1; i <= totalPages; i++) {
         pages.push(
             <button
